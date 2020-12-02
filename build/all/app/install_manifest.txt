@@ -1,0 +1,5 @@
+//manifest.json
+//potd.apparmor
+//assets/logo.svg
+//qml/Main.qml
+//potd.desktop

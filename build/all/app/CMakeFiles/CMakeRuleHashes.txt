@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+60183c53dcbbf01ddb151f9c0e9551d7 CMakeFiles/potd.desktop
+fb65fab344973bc44e62abb149f57ec6 po/CMakeFiles/potd.potd.pot
