@@ -1,0 +1,15 @@
+{
+    "name": "potd.potd",
+    "description": "Shows NASAs picture of the day.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Astronomy Picture Of The Day",
+    "hooks": {
+        "potd": {
+            "apparmor": "potd.apparmor",
+            "desktop":  "potd.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Wolfgang Eder <eder9@gmx.at>",
+    "framework" : "ubuntu-sdk-16.04"
+}
