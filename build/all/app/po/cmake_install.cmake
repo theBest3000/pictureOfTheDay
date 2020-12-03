@@ -1,4 +1,4 @@
-# Install script for directory: /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/po
+# Install script for directory: /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/po
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

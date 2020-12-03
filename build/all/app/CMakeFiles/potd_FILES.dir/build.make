@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd
+CMAKE_SOURCE_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app
+CMAKE_BINARY_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app
 
 # Utility rule file for potd_FILES.
 
@@ -67,6 +67,6 @@ CMakeFiles/potd_FILES.dir/clean:
 .PHONY : CMakeFiles/potd_FILES.dir/clean
 
 CMakeFiles/potd_FILES.dir/depend:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/CMakeFiles/potd_FILES.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles/potd_FILES.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/potd_FILES.dir/depend
 

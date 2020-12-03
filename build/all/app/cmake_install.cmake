@@ -1,4 +1,4 @@
-# Install script for directory: /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd
+# Install script for directory: /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -41,7 +41,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/" TYPE FILE FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/manifest.json")
+file(INSTALL DESTINATION "/" TYPE FILE FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/manifest.json")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -53,7 +53,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/" TYPE FILE FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/potd.apparmor")
+file(INSTALL DESTINATION "/" TYPE FILE FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/potd.apparmor")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -65,7 +65,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/" TYPE DIRECTORY FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/assets")
+file(INSTALL DESTINATION "/" TYPE DIRECTORY FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/assets")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -77,7 +77,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/" TYPE DIRECTORY FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/qml")
+file(INSTALL DESTINATION "/" TYPE DIRECTORY FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/qml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -89,12 +89,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/" TYPE FILE FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/potd.desktop")
+file(INSTALL DESTINATION "/" TYPE FILE FILES "/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/potd.desktop")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/po/cmake_install.cmake")
+  include("/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/po/cmake_install.cmake")
 
 endif()
 
@@ -106,5 +106,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
