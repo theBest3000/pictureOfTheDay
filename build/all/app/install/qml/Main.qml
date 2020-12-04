@@ -84,8 +84,6 @@ import Ubuntu.Components.Popups 1.3
 
                       }
                   }
-
-
           }
 
 
@@ -118,88 +116,103 @@ import Ubuntu.Components.Popups 1.3
                 id: additionalInfoHeader
                 title: i18n.tr("Additional infos")
               }
-              Button{
+
+              ScrollView{
                 anchors.top:additionalInfoHeader.bottom
-                anchors.topMargin: units.gu(2)
-                id: openHighResImage
-                text: i18n.tr("Open High Resolution Image")
-
-                onClicked: {
-                  Qt.openUrlExternally(pictureOfTheDayInfos.hdurlInfo);
-                }
-              }
-
-              Label{
-                anchors.top:openHighResImage.bottom
-                anchors.topMargin: units.gu(2)
-                id: titelLabel
-                font.bold: true
-                text: i18n.tr("Titel:")
-              }
-
-              Label{
-                anchors.top:titelLabel.bottom
-                anchors.topMargin: units.gu(2)
-                id: titelText
-                text: pictureOfTheDayInfos.titleInfo
-              }
-
-              Label{
-                anchors.top:titelText.bottom
-                anchors.topMargin: units.gu(2)
-                id: copyrightLabel
-                font.bold: true
-                text: i18n.tr("Copyright:")
-              }
-
-              Label{
-                anchors.top:copyrightLabel.bottom
-                anchors.topMargin: units.gu(2)
-                id: copyrightText
-                text: pictureOfTheDayInfos.copyrightInfo
-              }
-
-              Label{
-                anchors.top:copyrightText.bottom
-                anchors.topMargin: units.gu(2)
-                id: descriptionLabel
-                font.bold: true
-                text: i18n.tr("Description:")
-              }
-
-              Flickable{
-                anchors.top:descriptionLabel.bottom
-                anchors.topMargin: units.gu(2)
+                anchors.topMargin:units.gu(2)
+                anchors.leftMargin:units.gu(2)
+                id: additionalInfoScrollView
                 width: bottomEdge.width
-                height: units.gu(50)
-                contentHeight: descriptionText.height
-                id: textFlick
-                Text{
+                height: bottomEdge.height
+
+                Item{
+                  id: itemScrollView
                   width: bottomEdge.width
-                  wrapMode:Text.WordWrap
-                  id: descriptionText
-                  text: pictureOfTheDayInfos.explanationInfo
+
+                Button{
+                  anchors.top:itemScrollView.bottom
+                  anchors.topMargin: units.gu(2)
+                  id: openHighResImage
+                  text: i18n.tr("Open High Resolution Image")
+
+                  onClicked: {
+                    Qt.openUrlExternally(pictureOfTheDayInfos.hdurlInfo);
+                  }
+                }
+
+                Label{
+                  anchors.top:openHighResImage.bottom
+                  anchors.topMargin: units.gu(2)
+                  id: titelLabel
+                  font.bold: true
+                  text: i18n.tr("Titel:")
+                }
+
+                Label{
+                  anchors.top:titelLabel.bottom
+                  anchors.topMargin: units.gu(2)
+                  id: titelText
+                  text: pictureOfTheDayInfos.titleInfo
+                }
+
+                Label{
+                  anchors.top:titelText.bottom
+                  anchors.topMargin: units.gu(2)
+                  id: copyrightLabel
+                  font.bold: true
+                  text: i18n.tr("Copyright:")
+                }
+
+                Label{
+                  anchors.top:copyrightLabel.bottom
+                  anchors.topMargin: units.gu(2)
+                  id: copyrightText
+                  text: pictureOfTheDayInfos.copyrightInfo
+                }
+
+                Label{
+                  anchors.top:copyrightText.bottom
+                  anchors.topMargin: units.gu(2)
+                  id: descriptionLabel
+                  font.bold: true
+                  text: i18n.tr("Description:")
+                }
+
+                  Text{
+                    anchors.top:descriptionLabel.bottom
+                    anchors.topMargin:units.gu(2)
+
+                    width: bottomEdge.width
+                    wrapMode:Text.WordWrap
+                    id: descriptionText
+                    text: pictureOfTheDayInfos.explanationInfo
+                  }
+
                 }
               }
-
-
-
             }
           }
 
-          Image {
-            anchors.top: imagePageHeader.bottom;
-            //anchors.topMargin: units.gu(1)
-            //anchors.leftMargin: units.gu(1)
-            id: nasaImage
-               visible: nasaImage.status === Image.Ready
-               fillMode: Image.PreserveAspectFit
-               width: parent.width
-               height: parent.height //- units.gu(10)
-               onStatusChanged: if (nasaImage.status == Image.Ready) activity.running = false
+          ScrollView{
+            anchors.top:imagePageHeader.bottom
+            id: imageScrollView
+            width: imagePage.width
+            height: imagePage.height
+
+            Item{
+              id: itemScrollViewOfImage
 
 
-               PinchArea {
+              Image {
+                id: nasaImage
+                visible: nasaImage.status === Image.Ready
+                fillMode: Image.PreserveAspectFit
+                width: imagePage.width
+                height: imagePage.height
+                onStatusChanged: if (nasaImage.status == Image.Ready) activity.running = false
+
+
+                PinchArea {
                     anchors.fill: parent
                     pinch.target: nasaImage
                     pinch.minimumScale: 0.1
@@ -214,7 +227,9 @@ import Ubuntu.Components.Popups 1.3
                   }
                 }
                 */
-          }
+              }
+            }
+        }
 
           }
 
@@ -297,27 +312,30 @@ import Ubuntu.Components.Popups 1.3
               Dialog {
                   id: dialog
                   title: i18n.tr("Error")
-                  text: i18n.tr("An error occured.")
+                  text: errorCodes.errorText
 
                   Button {
-                      text: "Close"
+                      text: i18n.tr("Close")
                       onClicked: PopupUtils.close(dialog)
                   }
               }
           }
 
 
-property var pictureOfTheDayInfos:{
-  "copyrightInfo":"",
-  "dateInfo":"",
-  "explanationInfo":"",
-  "hdurlInfo":"",
-  "mediaTypeInfo":"",
-  "serviceVersionInfo":"",
-  "titleInfo":"",
-  "urlInfo":""
-}
+    property var pictureOfTheDayInfos:{
+      "copyrightInfo":"",
+      "dateInfo":"",
+      "explanationInfo":"",
+      "hdurlInfo":"",
+      "mediaTypeInfo":"",
+      "serviceVersionInfo":"",
+      "titleInfo":"",
+      "urlInfo":""
+    }
 
+    property var errorCodes:{
+      "errorText":""
+    }
 
     function get_picture(dateStr)
     {
@@ -362,6 +380,30 @@ property var pictureOfTheDayInfos:{
     {
       activity.running = false
       nasaImage.source = ""
+
+      if (errorCode === 10)
+      {
+        errorCodes = {
+          "errorText": i18n.tr("Video not supported yet.")
+        }
+        PopupUtils.open(errorDialog)
+        return
+      }
+
+      if (errorCode === 400)
+      {
+        errorCodes = {
+          "errorText": i18n.tr("Picture does not exist. Did you set the proper date?")
+        }
+        PopupUtils.open(errorDialog)
+        return
+      }
+
+      errorCodes = {
+        "errorText": i18n.tr("An error occured. Errorcode: ") + errorCode
+      }
+
+
       PopupUtils.open(errorDialog)
     }
 
@@ -374,7 +416,6 @@ property var pictureOfTheDayInfos:{
               //reset Pinch
               nasaImage.scale = 1.0
               nasaImage.source = res_json.url
-
             }
             else if (res_json.media_type === "video")
             {
@@ -385,13 +426,8 @@ property var pictureOfTheDayInfos:{
 
             if (res_json.copyright !== undefined)
             {
-                //copyrightLabel.visible = true
-                //copyrightLabel.text = "Copyright " + res_json.copyright
+              res_json.copyright = i18n.tr("Public Domain")
             }
-            else
-            {
-                //copyrightLabel.visible = false
-              }
 
               //put everyting in the property var pictureOfTheDayInfos
             pictureOfTheDayInfos = {
