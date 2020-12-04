@@ -1,7 +1,11 @@
 [Desktop Entry]
 Name=Astronomy Picture Of The Day
+Name[de]=Astronomy Picture Of The Day
+Name[fr]=Image astronomique du jour
 Exec=qmlscene %U qml/Main.qml
 Icon=assets/logo.svg
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
+X-Ubuntu-Splash-Color=Black
+X-Ubuntu-Splash-Image=assets/saturnForSplashScreen.jpg

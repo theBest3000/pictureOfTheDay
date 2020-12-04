@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd
+CMAKE_SOURCE_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app
+CMAKE_BINARY_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app
 
 # Utility rule file for potd.desktop.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/b
 include CMakeFiles/potd.desktop.dir/progress.make
 
 CMakeFiles/potd.desktop:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Merging translations into potd.desktop..."
-	LC_ALL=C /usr/bin/intltool-merge -d -u /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/po /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/potd.desktop.in potd.desktop
-	sed -i 's/potd-//g' /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/potd.desktop
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Merging translations into potd.desktop..."
+	LC_ALL=C /usr/bin/intltool-merge -d -u /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/po /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/potd.desktop.in potd.desktop
+	sed -i 's/potd-//g' /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/potd.desktop
 
 potd.desktop: CMakeFiles/potd.desktop
 potd.desktop: CMakeFiles/potd.desktop.dir/build.make
@@ -73,6 +73,6 @@ CMakeFiles/potd.desktop.dir/clean:
 .PHONY : CMakeFiles/potd.desktop.dir/clean
 
 CMakeFiles/potd.desktop.dir/depend:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/CMakeFiles/potd.desktop.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles/potd.desktop.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/potd.desktop.dir/depend
 

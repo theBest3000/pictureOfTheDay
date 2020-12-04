@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-02 14:17+0000\n"
+"POT-Creation-Date: 2020-12-04 16:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Picture Of The Day"
 msgstr ""
 
-#: ../qml/Main.qml:44 ../qml/Main.qml:218
+#: ../qml/Main.qml:44 ../qml/Main.qml:240
 msgid "About"
 msgstr ""
 
@@ -29,40 +29,56 @@ msgstr ""
 msgid "Get picture of that day!"
 msgstr ""
 
-#: ../qml/Main.qml:119
+#: ../qml/Main.qml:117
 msgid "Additional infos"
 msgstr ""
 
-#: ../qml/Main.qml:125
+#: ../qml/Main.qml:136
 msgid "Open High Resolution Image"
 msgstr ""
 
-#: ../qml/Main.qml:137
+#: ../qml/Main.qml:148
 msgid "Titel:"
 msgstr ""
 
-#: ../qml/Main.qml:152
+#: ../qml/Main.qml:163
 msgid "Copyright:"
 msgstr ""
 
-#: ../qml/Main.qml:167
+#: ../qml/Main.qml:178
 msgid "Description:"
 msgstr ""
 
-#: ../qml/Main.qml:246
-msgid "Icon from OpenClipart-Vectors at Pixabay."
+#: ../qml/Main.qml:268
+msgid "Icon and Splashscreen from Pixabay."
 msgstr ""
 
-#: ../qml/Main.qml:267
+#: ../qml/Main.qml:289
 msgid "Code based on an online tutorial:"
 msgstr ""
 
-#: ../qml/Main.qml:292
+#: ../qml/Main.qml:314
 msgid "Error"
 msgstr ""
 
-#: ../qml/Main.qml:293
-msgid "An error occured."
+#: ../qml/Main.qml:318
+msgid "Close"
+msgstr ""
+
+#: ../qml/Main.qml:387
+msgid "Video not supported yet."
+msgstr ""
+
+#: ../qml/Main.qml:396
+msgid "Picture does not exist. Did you set the proper date?"
+msgstr ""
+
+#: ../qml/Main.qml:403
+msgid "An error occured. Errorcode: "
+msgstr ""
+
+#: ../qml/Main.qml:429
+msgid "Public Domain"
 msgstr ""
 
 #: potd.desktop.in.h:1

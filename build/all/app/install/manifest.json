@@ -9,7 +9,7 @@
             "desktop": "potd.desktop"
         }
     },
-    "version": "0.1",
+    "version": "0.2",
     "maintainer": "Wolfgang Eder <eder9@gmx.at>",
     "framework": "ubuntu-sdk-16.04"
 }

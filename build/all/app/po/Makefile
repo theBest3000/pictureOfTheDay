@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd
+CMAKE_SOURCE_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app
+CMAKE_BINARY_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,17 +100,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -122,16 +111,27 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/CMakeFiles /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/po/CMakeFiles/progress.marks
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app/CMakeFiles 0
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/po/CMakeFiles/progress.marks
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/clean
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,37 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/preinstall
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/preinstall
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+po/CMakeFiles/pofiles.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles.dir/rule
+.PHONY : po/CMakeFiles/pofiles.dir/rule
+
+# Convenience name for target.
+pofiles: po/CMakeFiles/pofiles.dir/rule
+
+.PHONY : pofiles
+
+# fast build rule for target.
+pofiles/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/build
+.PHONY : pofiles/fast
+
+# Convenience name for target.
 po/CMakeFiles/potd.potd.pot.dir/rule:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/potd.potd.pot.dir/rule
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/potd.potd.pot.dir/rule
 .PHONY : po/CMakeFiles/potd.potd.pot.dir/rule
 
 # Convenience name for target.
@@ -166,8 +181,38 @@ potd.potd.pot: po/CMakeFiles/potd.potd.pot.dir/rule
 
 # fast build rule for target.
 potd.potd.pot/fast:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/build
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/build
 .PHONY : potd.potd.pot/fast
+
+# Convenience name for target.
+po/CMakeFiles/pofiles_1.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_1.dir/rule
+.PHONY : po/CMakeFiles/pofiles_1.dir/rule
+
+# Convenience name for target.
+pofiles_1: po/CMakeFiles/pofiles_1.dir/rule
+
+.PHONY : pofiles_1
+
+# fast build rule for target.
+pofiles_1/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles_1.dir/build.make po/CMakeFiles/pofiles_1.dir/build
+.PHONY : pofiles_1/fast
+
+# Convenience name for target.
+po/CMakeFiles/pofiles_2.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_2.dir/rule
+.PHONY : po/CMakeFiles/pofiles_2.dir/rule
+
+# Convenience name for target.
+pofiles_2: po/CMakeFiles/pofiles_2.dir/rule
+
+.PHONY : pofiles_2
+
+# fast build rule for target.
+pofiles_2/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/build
+.PHONY : pofiles_2/fast
 
 # Help Target
 help:
@@ -179,9 +224,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... potd.potd.pot"
-	@echo "... install/strip"
+	@echo "... pofiles"
 	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... potd.potd.pot"
+	@echo "... pofiles_1"
+	@echo "... pofiles_2"
 .PHONY : help
 
 
@@ -193,6 +241,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/Source/potd/build/all/app && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
