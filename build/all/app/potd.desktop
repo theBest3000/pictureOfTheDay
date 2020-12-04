@@ -1,5 +1,7 @@
 [Desktop Entry]
 Name=Astronomy Picture Of The Day
+Name[de]=Astronomy Picture Of The Day
+Name[fr]=Image astronomique du jour
 Exec=qmlscene %U qml/Main.qml
 Icon=assets/logo.svg
 Terminal=false

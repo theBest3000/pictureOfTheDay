@@ -6,3 +6,5 @@
 //assets/nasa-logo-web-rgb.png
 //qml/Main.qml
 //potd.desktop
+/share/locale/de/LC_MESSAGES/potd.potd.mo
+/share/locale/fr/LC_MESSAGES/potd.potd.mo
