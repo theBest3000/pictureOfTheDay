@@ -68,38 +68,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -121,6 +89,38 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,34 +155,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-po/CMakeFiles/pofiles.dir/rule:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles.dir/rule
-.PHONY : po/CMakeFiles/pofiles.dir/rule
+po/CMakeFiles/pofiles_2.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_2.dir/rule
+.PHONY : po/CMakeFiles/pofiles_2.dir/rule
 
 # Convenience name for target.
-pofiles: po/CMakeFiles/pofiles.dir/rule
+pofiles_2: po/CMakeFiles/pofiles_2.dir/rule
 
-.PHONY : pofiles
+.PHONY : pofiles_2
 
 # fast build rule for target.
-pofiles/fast:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/build
-.PHONY : pofiles/fast
-
-# Convenience name for target.
-po/CMakeFiles/potd.potd.pot.dir/rule:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/potd.potd.pot.dir/rule
-.PHONY : po/CMakeFiles/potd.potd.pot.dir/rule
-
-# Convenience name for target.
-potd.potd.pot: po/CMakeFiles/potd.potd.pot.dir/rule
-
-.PHONY : potd.potd.pot
-
-# fast build rule for target.
-potd.potd.pot/fast:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/build
-.PHONY : potd.potd.pot/fast
+pofiles_2/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/build
+.PHONY : pofiles_2/fast
 
 # Convenience name for target.
 po/CMakeFiles/pofiles_1.dir/rule:
@@ -200,19 +185,49 @@ pofiles_1/fast:
 .PHONY : pofiles_1/fast
 
 # Convenience name for target.
-po/CMakeFiles/pofiles_2.dir/rule:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_2.dir/rule
-.PHONY : po/CMakeFiles/pofiles_2.dir/rule
+po/CMakeFiles/pofiles.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles.dir/rule
+.PHONY : po/CMakeFiles/pofiles.dir/rule
 
 # Convenience name for target.
-pofiles_2: po/CMakeFiles/pofiles_2.dir/rule
+pofiles: po/CMakeFiles/pofiles.dir/rule
 
-.PHONY : pofiles_2
+.PHONY : pofiles
 
 # fast build rule for target.
-pofiles_2/fast:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/build
-.PHONY : pofiles_2/fast
+pofiles/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/build
+.PHONY : pofiles/fast
+
+# Convenience name for target.
+po/CMakeFiles/pofiles_3.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_3.dir/rule
+.PHONY : po/CMakeFiles/pofiles_3.dir/rule
+
+# Convenience name for target.
+pofiles_3: po/CMakeFiles/pofiles_3.dir/rule
+
+.PHONY : pofiles_3
+
+# fast build rule for target.
+pofiles_3/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles_3.dir/build.make po/CMakeFiles/pofiles_3.dir/build
+.PHONY : pofiles_3/fast
+
+# Convenience name for target.
+po/CMakeFiles/potd.potd.pot.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/potd.potd.pot.dir/rule
+.PHONY : po/CMakeFiles/potd.potd.pot.dir/rule
+
+# Convenience name for target.
+potd.potd.pot: po/CMakeFiles/potd.potd.pot.dir/rule
+
+.PHONY : potd.potd.pot
+
+# fast build rule for target.
+potd.potd.pot/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/build
+.PHONY : potd.potd.pot/fast
 
 # Help Target
 help:
@@ -221,15 +236,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... pofiles"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... potd.potd.pot"
-	@echo "... pofiles_1"
 	@echo "... pofiles_2"
+	@echo "... pofiles_1"
+	@echo "... install/local"
+	@echo "... pofiles"
+	@echo "... pofiles_3"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... potd.potd.pot"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 .PHONY : help
 
 

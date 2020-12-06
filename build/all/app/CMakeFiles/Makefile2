@@ -103,7 +103,7 @@ clean: CMakeFiles/potd_FILES.dir/clean
 CMakeFiles/potd.desktop.dir/all:
 	$(MAKE) -f CMakeFiles/potd.desktop.dir/build.make CMakeFiles/potd.desktop.dir/depend
 	$(MAKE) -f CMakeFiles/potd.desktop.dir/build.make CMakeFiles/potd.desktop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=3 "Built target potd.desktop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=4 "Built target potd.desktop"
 .PHONY : CMakeFiles/potd.desktop.dir/all
 
 # Include target in all.
@@ -137,17 +137,19 @@ clean: CMakeFiles/potd.desktop.dir/clean
 # Directory level rules for directory po
 
 # Convenience name for "all" pass in the directory.
-po/all: po/CMakeFiles/potd.potd.pot.dir/all
-po/all: po/CMakeFiles/pofiles_1.dir/all
 po/all: po/CMakeFiles/pofiles_2.dir/all
+po/all: po/CMakeFiles/pofiles_1.dir/all
+po/all: po/CMakeFiles/pofiles_3.dir/all
+po/all: po/CMakeFiles/potd.potd.pot.dir/all
 
 .PHONY : po/all
 
 # Convenience name for "clean" pass in the directory.
-po/clean: po/CMakeFiles/pofiles.dir/clean
-po/clean: po/CMakeFiles/potd.potd.pot.dir/clean
-po/clean: po/CMakeFiles/pofiles_1.dir/clean
 po/clean: po/CMakeFiles/pofiles_2.dir/clean
+po/clean: po/CMakeFiles/pofiles_1.dir/clean
+po/clean: po/CMakeFiles/pofiles.dir/clean
+po/clean: po/CMakeFiles/pofiles_3.dir/clean
+po/clean: po/CMakeFiles/potd.potd.pot.dir/clean
 
 .PHONY : po/clean
 
@@ -157,72 +159,39 @@ po/preinstall:
 .PHONY : po/preinstall
 
 #=============================================================================
-# Target rules for target po/CMakeFiles/pofiles.dir
+# Target rules for target po/CMakeFiles/pofiles_2.dir
 
 # All Build rule for target.
-po/CMakeFiles/pofiles.dir/all: po/CMakeFiles/pofiles_1.dir/all
-po/CMakeFiles/pofiles.dir/all: po/CMakeFiles/pofiles_2.dir/all
-	$(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/depend
-	$(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num= "Built target pofiles"
-.PHONY : po/CMakeFiles/pofiles.dir/all
-
-# Build rule for subdir invocation for target.
-po/CMakeFiles/pofiles.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 0
-.PHONY : po/CMakeFiles/pofiles.dir/rule
-
-# Convenience name for target.
-pofiles: po/CMakeFiles/pofiles.dir/rule
-
-.PHONY : pofiles
-
-# clean rule for target.
-po/CMakeFiles/pofiles.dir/clean:
-	$(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/clean
-.PHONY : po/CMakeFiles/pofiles.dir/clean
-
-# clean rule for target.
-clean: po/CMakeFiles/pofiles.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target po/CMakeFiles/potd.potd.pot.dir
-
-# All Build rule for target.
-po/CMakeFiles/potd.potd.pot.dir/all:
-	$(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/depend
-	$(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=4 "Built target potd.potd.pot"
-.PHONY : po/CMakeFiles/potd.potd.pot.dir/all
+po/CMakeFiles/pofiles_2.dir/all:
+	$(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/depend
+	$(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=2 "Built target pofiles_2"
+.PHONY : po/CMakeFiles/pofiles_2.dir/all
 
 # Include target in all.
-all: po/CMakeFiles/potd.potd.pot.dir/all
+all: po/CMakeFiles/pofiles_2.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-po/CMakeFiles/potd.potd.pot.dir/rule: cmake_check_build_system
+po/CMakeFiles/pofiles_2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/potd.potd.pot.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 0
-.PHONY : po/CMakeFiles/potd.potd.pot.dir/rule
+.PHONY : po/CMakeFiles/pofiles_2.dir/rule
 
 # Convenience name for target.
-potd.potd.pot: po/CMakeFiles/potd.potd.pot.dir/rule
+pofiles_2: po/CMakeFiles/pofiles_2.dir/rule
 
-.PHONY : potd.potd.pot
-
-# clean rule for target.
-po/CMakeFiles/potd.potd.pot.dir/clean:
-	$(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/clean
-.PHONY : po/CMakeFiles/potd.potd.pot.dir/clean
+.PHONY : pofiles_2
 
 # clean rule for target.
-clean: po/CMakeFiles/potd.potd.pot.dir/clean
+po/CMakeFiles/pofiles_2.dir/clean:
+	$(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/clean
+.PHONY : po/CMakeFiles/pofiles_2.dir/clean
+
+# clean rule for target.
+clean: po/CMakeFiles/pofiles_2.dir/clean
 
 .PHONY : clean
 
@@ -264,39 +233,110 @@ clean: po/CMakeFiles/pofiles_1.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target po/CMakeFiles/pofiles_2.dir
+# Target rules for target po/CMakeFiles/pofiles.dir
 
 # All Build rule for target.
-po/CMakeFiles/pofiles_2.dir/all:
-	$(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/depend
-	$(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=2 "Built target pofiles_2"
-.PHONY : po/CMakeFiles/pofiles_2.dir/all
+po/CMakeFiles/pofiles.dir/all: po/CMakeFiles/pofiles_2.dir/all
+po/CMakeFiles/pofiles.dir/all: po/CMakeFiles/pofiles_1.dir/all
+po/CMakeFiles/pofiles.dir/all: po/CMakeFiles/pofiles_3.dir/all
+	$(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/depend
+	$(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num= "Built target pofiles"
+.PHONY : po/CMakeFiles/pofiles.dir/all
+
+# Build rule for subdir invocation for target.
+po/CMakeFiles/pofiles.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 0
+.PHONY : po/CMakeFiles/pofiles.dir/rule
+
+# Convenience name for target.
+pofiles: po/CMakeFiles/pofiles.dir/rule
+
+.PHONY : pofiles
+
+# clean rule for target.
+po/CMakeFiles/pofiles.dir/clean:
+	$(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/clean
+.PHONY : po/CMakeFiles/pofiles.dir/clean
+
+# clean rule for target.
+clean: po/CMakeFiles/pofiles.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target po/CMakeFiles/pofiles_3.dir
+
+# All Build rule for target.
+po/CMakeFiles/pofiles_3.dir/all:
+	$(MAKE) -f po/CMakeFiles/pofiles_3.dir/build.make po/CMakeFiles/pofiles_3.dir/depend
+	$(MAKE) -f po/CMakeFiles/pofiles_3.dir/build.make po/CMakeFiles/pofiles_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=3 "Built target pofiles_3"
+.PHONY : po/CMakeFiles/pofiles_3.dir/all
 
 # Include target in all.
-all: po/CMakeFiles/pofiles_2.dir/all
+all: po/CMakeFiles/pofiles_3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-po/CMakeFiles/pofiles_2.dir/rule: cmake_check_build_system
+po/CMakeFiles/pofiles_3.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_2.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 0
-.PHONY : po/CMakeFiles/pofiles_2.dir/rule
+.PHONY : po/CMakeFiles/pofiles_3.dir/rule
 
 # Convenience name for target.
-pofiles_2: po/CMakeFiles/pofiles_2.dir/rule
+pofiles_3: po/CMakeFiles/pofiles_3.dir/rule
 
-.PHONY : pofiles_2
-
-# clean rule for target.
-po/CMakeFiles/pofiles_2.dir/clean:
-	$(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/clean
-.PHONY : po/CMakeFiles/pofiles_2.dir/clean
+.PHONY : pofiles_3
 
 # clean rule for target.
-clean: po/CMakeFiles/pofiles_2.dir/clean
+po/CMakeFiles/pofiles_3.dir/clean:
+	$(MAKE) -f po/CMakeFiles/pofiles_3.dir/build.make po/CMakeFiles/pofiles_3.dir/clean
+.PHONY : po/CMakeFiles/pofiles_3.dir/clean
+
+# clean rule for target.
+clean: po/CMakeFiles/pofiles_3.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target po/CMakeFiles/potd.potd.pot.dir
+
+# All Build rule for target.
+po/CMakeFiles/potd.potd.pot.dir/all:
+	$(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/depend
+	$(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=5 "Built target potd.potd.pot"
+.PHONY : po/CMakeFiles/potd.potd.pot.dir/all
+
+# Include target in all.
+all: po/CMakeFiles/potd.potd.pot.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+po/CMakeFiles/potd.potd.pot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/potd.potd.pot.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles 0
+.PHONY : po/CMakeFiles/potd.potd.pot.dir/rule
+
+# Convenience name for target.
+potd.potd.pot: po/CMakeFiles/potd.potd.pot.dir/rule
+
+.PHONY : potd.potd.pot
+
+# clean rule for target.
+po/CMakeFiles/potd.potd.pot.dir/clean:
+	$(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/clean
+.PHONY : po/CMakeFiles/potd.potd.pot.dir/clean
+
+# clean rule for target.
+clean: po/CMakeFiles/potd.potd.pot.dir/clean
 
 .PHONY : clean
 
