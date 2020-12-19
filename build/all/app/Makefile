@@ -181,30 +181,17 @@ potd.desktop/fast:
 .PHONY : potd.desktop/fast
 
 #=============================================================================
-# Target rules for targets named pofiles
+# Target rules for targets named pofiles_2
 
 # Build rule for target.
-pofiles: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pofiles
-.PHONY : pofiles
+pofiles_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pofiles_2
+.PHONY : pofiles_2
 
 # fast build rule for target.
-pofiles/fast:
-	$(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/build
-.PHONY : pofiles/fast
-
-#=============================================================================
-# Target rules for targets named potd.potd.pot
-
-# Build rule for target.
-potd.potd.pot: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 potd.potd.pot
-.PHONY : potd.potd.pot
-
-# fast build rule for target.
-potd.potd.pot/fast:
-	$(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/build
-.PHONY : potd.potd.pot/fast
+pofiles_2/fast:
+	$(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/build
+.PHONY : pofiles_2/fast
 
 #=============================================================================
 # Target rules for targets named pofiles_1
@@ -220,17 +207,43 @@ pofiles_1/fast:
 .PHONY : pofiles_1/fast
 
 #=============================================================================
-# Target rules for targets named pofiles_2
+# Target rules for targets named pofiles
 
 # Build rule for target.
-pofiles_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pofiles_2
-.PHONY : pofiles_2
+pofiles: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pofiles
+.PHONY : pofiles
 
 # fast build rule for target.
-pofiles_2/fast:
-	$(MAKE) -f po/CMakeFiles/pofiles_2.dir/build.make po/CMakeFiles/pofiles_2.dir/build
-.PHONY : pofiles_2/fast
+pofiles/fast:
+	$(MAKE) -f po/CMakeFiles/pofiles.dir/build.make po/CMakeFiles/pofiles.dir/build
+.PHONY : pofiles/fast
+
+#=============================================================================
+# Target rules for targets named pofiles_3
+
+# Build rule for target.
+pofiles_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pofiles_3
+.PHONY : pofiles_3
+
+# fast build rule for target.
+pofiles_3/fast:
+	$(MAKE) -f po/CMakeFiles/pofiles_3.dir/build.make po/CMakeFiles/pofiles_3.dir/build
+.PHONY : pofiles_3/fast
+
+#=============================================================================
+# Target rules for targets named potd.potd.pot
+
+# Build rule for target.
+potd.potd.pot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 potd.potd.pot
+.PHONY : potd.potd.pot
+
+# fast build rule for target.
+potd.potd.pot/fast:
+	$(MAKE) -f po/CMakeFiles/potd.potd.pot.dir/build.make po/CMakeFiles/potd.potd.pot.dir/build
+.PHONY : potd.potd.pot/fast
 
 # Help Target
 help:
@@ -246,10 +259,11 @@ help:
 	@echo "... potd.desktop"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... pofiles"
-	@echo "... potd.potd.pot"
-	@echo "... pofiles_1"
 	@echo "... pofiles_2"
+	@echo "... pofiles_1"
+	@echo "... pofiles"
+	@echo "... pofiles_3"
+	@echo "... potd.potd.pot"
 .PHONY : help
 
 

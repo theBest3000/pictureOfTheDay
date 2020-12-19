@@ -2,6 +2,7 @@
 Name=Astronomy Picture Of The Day
 Name[de]=Astronomy Picture Of The Day
 Name[fr]=Image astronomique du jour
+Name[nl]=Astronomiefoto van de dag
 Exec=qmlscene %U qml/Main.qml
 Icon=assets/logo.svg
 Terminal=false
