@@ -6,10 +6,11 @@
     "hooks": {
         "potd": {
             "apparmor": "potd.apparmor",
-            "desktop":  "potd.desktop"
+            "desktop": "potd.desktop",
+            "content-hub": "potd.content-hub"
         }
     },
-    "version": "0.3",
+    "version": "0.3.0",
     "maintainer": "Wolfgang Eder <eder9@gmx.at>",
     "framework" : "ubuntu-sdk-16.04"
 }

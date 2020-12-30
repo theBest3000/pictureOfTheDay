@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-28 11:07+0000\n"
+"POT-Creation-Date: 2020-12-30 18:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,36 +21,40 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: ../qml/AboutPage.qml:36
-msgid "Icon and Splashscreen from Pixabay."
+#: ../qml/AboutPage.qml:62
+msgid ""
+"Icon and Splashscreen from <a href=\"https://pixabay.com/de/users/"
+"openclipart-vectors-30363/?utm_source=link-attribution&amp;"
+"utm_medium=referral&amp;utm_campaign=image&amp;"
+"utm_content=148300\">Pixerbay</a>."
 msgstr ""
 
-#: ../qml/AboutPage.qml:57
-msgid "Code based on an online tutorial:"
+#: ../qml/AboutPage.qml:72
+msgid ""
+"Code based on an online <a href=\"https://blog.felgo.com/guest-post/nasa-"
+"astronomy-picture-app\">tutorial.</a>"
 msgstr ""
 
-#: ../qml/AdditionalInfoPage.qml:13
+#: ../qml/AboutPage.qml:81
+msgid ""
+"Bouncing Progress Bar from the app <a href=\"https://github.com/"
+"turanmahmudov/Wallpapers\">Wallpapers</a> from Turan Mahmudov."
+msgstr ""
+
+#: ../qml/AdditionalInfoPage.qml:9
 msgid "Additional infos"
 msgstr ""
 
-#: ../qml/AdditionalInfoPage.qml:40
-msgid "Open High Resolution Image"
-msgstr ""
-
-#: ../qml/AdditionalInfoPage.qml:52
+#: ../qml/AdditionalInfoPage.qml:33
 msgid "Titel:"
 msgstr ""
 
-#: ../qml/AdditionalInfoPage.qml:67
+#: ../qml/AdditionalInfoPage.qml:44
 msgid "Copyright:"
 msgstr ""
 
-#: ../qml/AdditionalInfoPage.qml:82
+#: ../qml/AdditionalInfoPage.qml:55
 msgid "Description:"
-msgstr ""
-
-#: ../qml/DatePickerPage.qml:17
-msgid "Picture Of The Day"
 msgstr ""
 
 #: ../qml/DatePickerPage.qml:54
@@ -61,28 +65,36 @@ msgstr ""
 msgid "dd. MMMM yyyy"
 msgstr ""
 
-#: ../qml/Main.qml:77
+#: ../qml/Main.qml:82
 msgid "Error"
 msgstr ""
 
-#: ../qml/Main.qml:81
+#: ../qml/Main.qml:86
 msgid "Close"
 msgstr ""
 
-#: ../qml/Rest.js:46
+#: ../qml/Rest.js:47
 msgid "Video not supported yet."
 msgstr ""
 
-#: ../qml/Rest.js:53
+#: ../qml/Rest.js:54
 msgid "Picture does not exist. Did you set the proper date?"
 msgstr ""
 
-#: ../qml/Rest.js:58
+#: ../qml/Rest.js:59
 msgid "An error occured. Errorcode: "
 msgstr ""
 
-#: ../qml/Rest.js:85
+#: ../qml/Rest.js:87
 msgid "Public Domain"
+msgstr ""
+
+#: ../qml/SaveImagePage.qml:13
+msgid "Save image locally"
+msgstr ""
+
+#: ../qml/ShareImagePage.qml:11
+msgid "Share image"
 msgstr ""
 
 #: potd.desktop.in.h:1

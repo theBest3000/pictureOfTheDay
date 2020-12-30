@@ -50,8 +50,14 @@ MainView {
 
     PicturePage{
       id: picturePage
-      onShowAdditionalInfoPage:{
-        datePickerPage.pageStack.addPageToNextColumn(datePickerPage, additionalInfoPage)
+      onSaveAs:{
+        console.log("Url still valid? "+urlToImage)
+        saveImagePage.pathToSave = urlToImage
+        picturePage.pageStack.addPageToCurrentColumn(picturePage, saveImagePage)
+        console.log("After adding page. Url still valid? "+urlToImage)
+      }
+      onShare:{
+        picturePage.pageStack.addPageToCurrentColumn(picturePage, shareImagePage)
       }
     }
 
@@ -59,13 +65,12 @@ MainView {
       id: aboutPage
     }
 
-    AdditionalInfoPage{
-      id: additionalInfoPage
-      onClickedBack:{
-        picturePage.collapsAdditionalInfoPage()
-        datePickerPage.pageStack.removePages(additionalInfoPage)
-        datePickerPage.pageStack.addPageToNextColumn(datePickerPage, picturePage)
-      }
+    SaveImagePage{
+      id: saveImagePage
+    }
+
+    ShareImagePage{
+      id: shareImagePage
     }
 
   }
@@ -100,6 +105,6 @@ property string errorText: ""
 
 property Image imageToShow: picturePage.image
 
-
+property string urlToImage: ""
 
 }

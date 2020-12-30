@@ -1,13 +1,17 @@
 //manifest.json
 //potd.apparmor
+//potd.content-hub
 //assets/saturnForSplashScreen.jpg
 //assets/logo.svg
 //assets/saturn-148300_1280.png
 //assets/nasa-logo-web-rgb.png
+//qml/ShareImagePage.qml
 //qml/AboutPage.qml
 //qml/DatePickerPage.qml
 //qml/AdditionalInfoPage.qml
 //qml/Main.qml
+//qml/BouncingProgressBar.qml
+//qml/SaveImagePage.qml
 //qml/PicturePage.qml
 //qml/Rest.js
 //potd.desktop

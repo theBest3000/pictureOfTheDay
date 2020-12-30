@@ -1,5 +1,7 @@
 import QtQuick 2.7
 import Ubuntu.Components 1.3
+import Ubuntu.Content 1.1
+import Ubuntu.DownloadManager 1.2
 
 Page {
   id: root
@@ -8,40 +10,76 @@ Page {
 
   property alias headerText: imagePageHeader.title
   property alias image: nasaImage
-  signal showAdditionalInfoPage
-  function collapsAdditionalInfoPage(){
-    bottomEdge.collapse()
-    checkActivity()
-  }
-  function checkActivity(){
-    if (nasaImage.status == Image.Ready) {
-      activity.running = false
-    }
-    else{
-      activity.running = true
-    }
-  }
+  property string urlToImage
+  signal share
+  signal saveAs
+
 
   header: PageHeader {
     id: imagePageHeader
+    trailingActionBar.actions: [
+    Action {
+      iconName: "browser-tabs"
+      onTriggered:{
+        Qt.openUrlExternally(pictureOfTheDayInfos.hdurlInfo);
+      }
+    },
+    Action {
+      iconName: "share"
+      onTriggered:{
+        if(nasaImage.status == Image.Ready){
+          //save image to local directory
+          downloadingProgressBar.visible = true
+          singleImageHighResDownload.download(pictureOfTheDayInfos.urlInfo)
+        }
+      }
+    },
+    Action {
+      iconName: "save-as"
+      onTriggered:{
+        if(nasaImage.status == Image.Ready){
+          //save image to local directory
+          downloadingProgressBar.visible = true
+          singleImageHighResDownload.download(pictureOfTheDayInfos.hdurlInfo)
+        }
+      }
+    }
+    ]
   }
 
-  ActivityIndicator {
-    id: activity
-    anchors.top: imagePageHeader.bottom;
-    anchors.centerIn : parent
-  }
-
-
-  BottomEdge {
-    id: bottomEdge
-    height: parent.height
-    onCommitStarted:{
-      root.showAdditionalInfoPage()
+  SingleDownload{
+    id: singleImageHighResDownload
+    onFinished: {
+        urlToImage = path
+        downloadingProgressBar.visible = false
+        root.saveAs()
     }
   }
 
+  SingleDownload{
+    id: singleImageLowResDownload
+    onFinished: {
+        urlToImage = path
+        downloadingProgressBar.visible = false
+        root.share()
+    }
+  }
 
+  BouncingProgressBar {
+      id: downloadingProgressBar
+      z: 10
+      anchors.top: imagePageHeader.bottom
+      visible: false
+  }
+
+  BottomEdge {
+    id: bottomEdge
+    contentComponent: bottomEdgeContent
+    Component {
+      id: bottomEdgeContent
+      AdditionalInfoPage{}
+    }
+  }
 
   ScrollView{
     anchors.top:imagePageHeader.bottom
@@ -61,10 +99,10 @@ Page {
         height: root.height
         onStatusChanged: {
           if (nasaImage.status == Image.Ready) {
-            activity.running = false
+            downloadingProgressBar.visible = false
           }
           else{
-            activity.running = true
+            downloadingProgressBar.visible = true
           }
         }
 
@@ -74,7 +112,7 @@ Page {
           pinch.target: nasaImage
           pinch.minimumScale: 0.1
           pinch.maximumScale: 10
-          //pinch.dragAxis: Pinch.NoPinch
+          pinch.dragAxis: Pinch.NoPinch
         }
 
         /*MouseArea{

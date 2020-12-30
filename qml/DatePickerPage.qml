@@ -14,8 +14,8 @@ import Ubuntu.Components.Pickers 1.3
 
     header: PageHeader {
       id: datePickerPageheader
-      title: i18n.tr("Picture Of The Day")
-      leadingActionBar.actions: [
+      title: "Picture Of The Day"
+      trailingActionBar.actions: [
       Action {
         iconName: "info"
         onTriggered:{

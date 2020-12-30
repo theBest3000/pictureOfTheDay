@@ -35,6 +35,7 @@ function get_request(url, params, callback)
     }(http)
     http.open("GET", url + "?" + params, true)
     http.send()
+    console.log("GET", url +"?" + params)
 }
 
 function requestError(errorCode)
@@ -80,8 +81,9 @@ function requestSuccess(res_json)
         //nasaVideo.visible = true
       }
 
-      if (res_json.copyright !== undefined)
+      if (res_json.copyright === undefined)
       {
+        console.log("Copyright undefined. Must be public domain")
         res_json.copyright = i18n.tr("Public Domain")
       }
 
