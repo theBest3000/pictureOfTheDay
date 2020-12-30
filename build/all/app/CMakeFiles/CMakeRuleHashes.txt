@@ -3,7 +3,7 @@ e1c1efadaba3fb1e9b4659b707cba150 CMakeFiles/potd.desktop
 bafc3c78ec84b9601595fae26eebe14e po/CMakeFiles/pofiles_1
 bafc3c78ec84b9601595fae26eebe14e po/CMakeFiles/pofiles_2
 bafc3c78ec84b9601595fae26eebe14e po/CMakeFiles/pofiles_3
-06fb2a8b04707bd3c12c1354f3dc1ecb po/CMakeFiles/potd.potd.pot
+c292ef858b5bc90861fbe1e33abf68d2 po/CMakeFiles/potd.potd.pot
 46d21a7dd499a2ddc112eff8a2fdc06b po/de.gmo
 9b635c83a594bd8c5b7769f7fd869e1d po/fr.gmo
 07d4d4a91145c4fbe8674adba836ab91 po/nl.gmo
