@@ -7,80 +7,115 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-04 12:18+0000\n"
-"PO-Revision-Date: 2020-12-04 17:46+0100\n"
+"POT-Creation-Date: 2020-12-30 18:12+0000\n"
+"PO-Revision-Date: 2020-12-30 21:42+0100\n"
 "Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: \n"
-"X-Generator: Poedit 2.0.6\n"
 
-#: ../qml/Main.qml:40
-msgid "Picture Of The Day"
-msgstr "Image du jour"
-
-#: ../qml/Main.qml:44 ../qml/Main.qml:240
+#: ../qml/AboutPage.qml:8
 msgid "About"
 msgstr "À propos"
 
-#: ../qml/Main.qml:78
-msgid "Get picture of that day!"
-msgstr "Obtenir l'image du jour!"
+#: ../qml/AboutPage.qml:62
+msgid ""
+"Icon and Splashscreen from <a href=\"https://pixabay.com/de/users/"
+"openclipart-vectors-30363/?utm_source=link-attribution&amp;"
+"utm_medium=referral&amp;utm_campaign=image&amp;"
+"utm_content=148300\">Pixerbay</a>."
+msgstr ""
+"Icône et écran de démarrage issus de <a href=\"https://pixabay.com/de/"
+"users/openclipart-vectors-30363/?utm_source=link-attribution&amp;"
+"utm_medium=referral&amp;utm_campaign=image&amp;"
+"utm_content=148300\">Pixerbay</a>."
 
-#: ../qml/Main.qml:117
+#: ../qml/AboutPage.qml:72
+msgid ""
+"Code based on an online <a href=\"https://blog.felgo.com/guest-post/nasa-"
+"astronomy-picture-app\">tutorial.</a>"
+msgstr ""
+"Code basé sur un <a href=\"https://blog.felgo.com/guest-post/nasa-"
+"astronomy-picture-app\">tutoriel en ligne.</a>"
+
+#: ../qml/AboutPage.qml:81
+msgid ""
+"Bouncing Progress Bar from the app <a href=\"https://github.com/"
+"turanmahmudov/Wallpapers\">Wallpapers</a> from Turan Mahmudov."
+msgstr ""
+"Barre de progression animée issue de l'application <a href=\"https://github."
+"com/turanmahmudov/Wallpapers\">Fonds d'écran</a> de Turan Mahmudov."
+
+#: ../qml/AdditionalInfoPage.qml:9
 msgid "Additional infos"
 msgstr "Informations supplémentaires"
 
-#: ../qml/Main.qml:136
-msgid "Open High Resolution Image"
-msgstr "Ouvrir l'image en haute résolution"
-
-#: ../qml/Main.qml:148
+#: ../qml/AdditionalInfoPage.qml:33
 msgid "Titel:"
-msgstr "Titre:"
+msgstr "Titre :"
 
-#: ../qml/Main.qml:163
+#: ../qml/AdditionalInfoPage.qml:44
 msgid "Copyright:"
-msgstr ""
+msgstr "Droits d'auteur :"
 
-#: ../qml/Main.qml:178
+#: ../qml/AdditionalInfoPage.qml:55
 msgid "Description:"
-msgstr "Description:"
+msgstr "Description :"
 
-#: ../qml/Main.qml:268
-msgid "Icon and Splashscreen from Pixabay."
-msgstr "Icône et écran de démarrage par Pixabay."
+#: ../qml/DatePickerPage.qml:54
+msgid "Get picture of that day!"
+msgstr "Obtenir l'image du jour !"
 
-#: ../qml/Main.qml:289
-msgid "Code based on an online tutorial:"
-msgstr "Code basé sur un tutoriel en ligne:"
+#: ../qml/Main.qml:43
+msgid "dd. MMMM yyyy"
+msgstr "dd. MMMM yyyy"
 
-#: ../qml/Main.qml:314
+#: ../qml/Main.qml:82
 msgid "Error"
 msgstr "Erreur"
 
-#: ../qml/Main.qml:318
+#: ../qml/Main.qml:86
 msgid "Close"
 msgstr "Fermer"
 
-#: ../qml/Main.qml:387
+#: ../qml/Rest.js:47
 msgid "Video not supported yet."
 msgstr "Vidéo non encore prise en charge."
 
-#: ../qml/Main.qml:396
+#: ../qml/Rest.js:54
 msgid "Picture does not exist. Did you set the proper date?"
-msgstr "L'image n'existe pas. Avez-vous défini la bonne date?"
+msgstr "L'image n'existe pas. Avez-vous défini la bonne date ?"
 
-#: ../qml/Main.qml:403
+#: ../qml/Rest.js:59
 msgid "An error occured. Errorcode: "
-msgstr "Une erreur s'est produite. Code de l'erreur: "
+msgstr "Une erreur s'est produite. Code de l'erreur : "
 
-#: ../qml/Main.qml:429
+#: ../qml/Rest.js:87
 msgid "Public Domain"
 msgstr "Domaine public"
+
+#: ../qml/SaveImagePage.qml:13
+msgid "Save image locally"
+msgstr "Enregistrer l'image localement"
+
+#: ../qml/ShareImagePage.qml:11
+msgid "Share image"
+msgstr "Partager l'image"
 
 #: potd.desktop.in.h:1
 msgid "Astronomy Picture Of The Day"
 msgstr "Image astronomique du jour"
+
+#~ msgid "Picture Of The Day"
+#~ msgstr "Image du jour"
+
+#~ msgid "Open High Resolution Image"
+#~ msgstr "Ouvrir l'image en haute résolution"
+
+#~ msgid "Icon and Splashscreen from Pixabay."
+#~ msgstr "Icône et écran de démarrage par Pixabay."
+
+#~ msgid "Code based on an online tutorial:"
+#~ msgstr "Code basé sur un tutoriel en ligne :"
