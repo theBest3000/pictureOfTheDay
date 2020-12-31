@@ -7,81 +7,118 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-04 16:49+0000\n"
-"PO-Revision-Date: 2020-12-05 17:15+0100\n"
+"POT-Creation-Date: 2020-12-30 18:12+0000\n"
+"PO-Revision-Date: 2020-12-31 14:28+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
-"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: nl\n"
 
-#: ../qml/Main.qml:40
-msgid "Picture Of The Day"
-msgstr "Afbeelding van de dag"
-
-#: ../qml/Main.qml:44 ../qml/Main.qml:240
+#: ../qml/AboutPage.qml:8
 msgid "About"
 msgstr "Over"
 
-#: ../qml/Main.qml:78
-msgid "Get picture of that day!"
-msgstr "Download die afbeelding!"
+#: ../qml/AboutPage.qml:62
+msgid ""
+"Icon and Splashscreen from <a href=\"https://pixabay.com/de/users/"
+"openclipart-vectors-30363/?utm_source=link-attribution&amp;"
+"utm_medium=referral&amp;utm_campaign=image&amp;"
+"utm_content=148300\">Pixerbay</a>."
+msgstr ""
+"Het pictogram en laadscherm zijn afkomstig van <a href=\"https://pixabay."
+"com/de/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;"
+"utm_medium=referral&amp;utm_campaign=image&amp;"
+"utm_content=148300\">Pixerbay</a>."
 
-#: ../qml/Main.qml:117
+#: ../qml/AboutPage.qml:72
+msgid ""
+"Code based on an online <a href=\"https://blog.felgo.com/guest-post/nasa-"
+"astronomy-picture-app\">tutorial.</a>"
+msgstr ""
+"De code is gebaseerd op een online-<a href=\"https://blog.felgo.com/"
+"guest-post/nasa-astronomy-picture-app\">handleiding</a>."
+
+#: ../qml/AboutPage.qml:81
+msgid ""
+"Bouncing Progress Bar from the app <a href=\"https://github.com/"
+"turanmahmudov/Wallpapers\">Wallpapers</a> from Turan Mahmudov."
+msgstr ""
+"De stuiterende voortgangsbalk is afkomstig van de app <a href=\"https://"
+"github.com/turanmahmudov/Wallpapers\">Achtergronden</a> van Turan "
+"Mahmudov."
+
+#: ../qml/AdditionalInfoPage.qml:9
 msgid "Additional infos"
 msgstr "Aanvullende informatie"
 
-#: ../qml/Main.qml:136
-msgid "Open High Resolution Image"
-msgstr "Afbeelding in hoge resolutie openen"
-
-#: ../qml/Main.qml:148
+#: ../qml/AdditionalInfoPage.qml:33
 msgid "Titel:"
 msgstr "Titel:"
 
-#: ../qml/Main.qml:163
+#: ../qml/AdditionalInfoPage.qml:44
 msgid "Copyright:"
 msgstr "Auteursrecht:"
 
-#: ../qml/Main.qml:178
+#: ../qml/AdditionalInfoPage.qml:55
 msgid "Description:"
 msgstr "Omschrijving:"
 
-#: ../qml/Main.qml:268
-msgid "Icon and Splashscreen from Pixabay."
-msgstr "Het pictogram en opstartscherm zijn afkomstig van Pixabay."
+#: ../qml/DatePickerPage.qml:54
+msgid "Get picture of that day!"
+msgstr "Download de afbeelding!"
 
-#: ../qml/Main.qml:289
-msgid "Code based on an online tutorial:"
-msgstr "De code is gebaseerd op een online-uitleg:"
+#: ../qml/Main.qml:43
+msgid "dd. MMMM yyyy"
+msgstr "dd MMMM yyyy"
 
-#: ../qml/Main.qml:314
+#: ../qml/Main.qml:82
 msgid "Error"
 msgstr "Fout"
 
-#: ../qml/Main.qml:318
+#: ../qml/Main.qml:86
 msgid "Close"
 msgstr "Sluiten"
 
-#: ../qml/Main.qml:387
+#: ../qml/Rest.js:47
 msgid "Video not supported yet."
 msgstr "De app ondersteunt nog geen video's."
 
-#: ../qml/Main.qml:396
+#: ../qml/Rest.js:54
 msgid "Picture does not exist. Did you set the proper date?"
 msgstr "De afbeelding bestaat niet. Heb je de juiste datum ingesteld?"
 
-#: ../qml/Main.qml:403
+#: ../qml/Rest.js:59
 msgid "An error occured. Errorcode: "
 msgstr "Er is een fout opgetreden. Foutcode: "
 
-#: ../qml/Main.qml:429
+#: ../qml/Rest.js:87
 msgid "Public Domain"
 msgstr "Publiek domein"
+
+#: ../qml/SaveImagePage.qml:13
+msgid "Save image locally"
+msgstr "Afbeelding lokaal opslaan"
+
+#: ../qml/ShareImagePage.qml:11
+msgid "Share image"
+msgstr "Afbeelding delen"
 
 #: potd.desktop.in.h:1
 msgid "Astronomy Picture Of The Day"
 msgstr "Astronomiefoto van de dag"
+
+#~ msgid "Picture Of The Day"
+#~ msgstr "Afbeelding van de dag"
+
+#~ msgid "Open High Resolution Image"
+#~ msgstr "Afbeelding in hoge resolutie openen"
+
+#~ msgid "Icon and Splashscreen from Pixabay."
+#~ msgstr "Het pictogram en opstartscherm zijn afkomstig van Pixabay."
+
+#~ msgid "Code based on an online tutorial:"
+#~ msgstr "De code is gebaseerd op een online-uitleg:"
