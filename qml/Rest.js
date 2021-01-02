@@ -35,7 +35,6 @@ function get_request(url, params, callback)
     }(http)
     http.open("GET", url + "?" + params, true)
     http.send()
-    console.log("GET", url +"?" + params)
 }
 
 function requestError(errorCode)
@@ -69,8 +68,6 @@ function requestSuccess(res_json)
       {
 
         //reset Pinch
-        //nasaImage.scale = 1.0
-        //nasaImage.source = res_json.url
         imageToShow.scale = 1.0
         imageToShow.source = res_json.url
       }
@@ -83,7 +80,6 @@ function requestSuccess(res_json)
 
       if (res_json.copyright === undefined)
       {
-        console.log("Copyright undefined. Must be public domain")
         res_json.copyright = i18n.tr("Public Domain")
       }
 

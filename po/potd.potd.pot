@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-30 18:12+0000\n"
+"POT-Creation-Date: 2021-01-02 14:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,14 +25,14 @@ msgstr ""
 msgid ""
 "Icon and Splashscreen from <a href=\"https://pixabay.com/de/users/"
 "openclipart-vectors-30363/?utm_source=link-attribution&amp;"
-"utm_medium=referral&amp;utm_campaign=image&amp;"
-"utm_content=148300\">Pixerbay</a>."
+"utm_medium=referral&amp;utm_campaign=image&amp;utm_content=148300\">Pixabay</"
+"a>."
 msgstr ""
 
 #: ../qml/AboutPage.qml:72
 msgid ""
 "Code based on an online <a href=\"https://blog.felgo.com/guest-post/nasa-"
-"astronomy-picture-app\">tutorial.</a>"
+"astronomy-picture-app\">tutorial</a>."
 msgstr ""
 
 #: ../qml/AboutPage.qml:81
@@ -62,39 +62,39 @@ msgid "Get picture of that day!"
 msgstr ""
 
 #: ../qml/Main.qml:43
-msgid "dd. MMMM yyyy"
+msgid "MM/dd/yyyy"
 msgstr ""
 
-#: ../qml/Main.qml:82
+#: ../qml/Main.qml:80
 msgid "Error"
 msgstr ""
 
-#: ../qml/Main.qml:86
+#: ../qml/Main.qml:84
 msgid "Close"
 msgstr ""
 
-#: ../qml/Rest.js:47
+#: ../qml/Rest.js:46
 msgid "Video not supported yet."
 msgstr ""
 
-#: ../qml/Rest.js:54
+#: ../qml/Rest.js:53
 msgid "Picture does not exist. Did you set the proper date?"
 msgstr ""
 
-#: ../qml/Rest.js:59
+#: ../qml/Rest.js:58
 msgid "An error occured. Errorcode: "
 msgstr ""
 
-#: ../qml/Rest.js:87
+#: ../qml/Rest.js:83
 msgid "Public Domain"
 msgstr ""
 
 #: ../qml/SaveImagePage.qml:13
-msgid "Save image locally"
+msgid "Save picture"
 msgstr ""
 
-#: ../qml/ShareImagePage.qml:11
-msgid "Share image"
+#: ../qml/ShareImagePage.qml:13
+msgid "Share picture"
 msgstr ""
 
 #: potd.desktop.in.h:1

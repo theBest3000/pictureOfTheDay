@@ -59,7 +59,7 @@ Page{
         id: appCopyrightLogo
         width: parent.width
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-        text: i18n.tr("Icon and Splashscreen from <a href=\"https://pixabay.com/de/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=148300\">Pixerbay</a>.")
+        text: i18n.tr("Icon and Splashscreen from <a href=\"https://pixabay.com/de/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=148300\">Pixabay</a>.")
         onLinkActivated: Qt.openUrlExternally(link)
       }
 
@@ -69,7 +69,7 @@ Page{
         id: appFelgoReference
         width: parent.width
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-        text: i18n.tr("Code based on an online <a href=\"https://blog.felgo.com/guest-post/nasa-astronomy-picture-app\">tutorial.</a>")
+        text: i18n.tr("Code based on an online <a href=\"https://blog.felgo.com/guest-post/nasa-astronomy-picture-app\">tutorial</a>.")
         onLinkActivated: Qt.openUrlExternally(link)
       }
 

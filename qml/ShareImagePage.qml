@@ -5,10 +5,12 @@ import Ubuntu.Content 1.3
 Page {
   id: root
 
+  property ContentTransfer activeTransfer //is of type ContentTransfer
+  property string pathToSave //I don't know why I can't just use the "global variable" urlToImage
 
   header: PageHeader {
     id: shareImageHeader
-    title: i18n.tr("Share image")
+    title: i18n.tr("Share picture")
   }
 
   ContentPeerPicker{
@@ -30,8 +32,6 @@ Page {
         })
     }
   }
-
-
   Component {
     id: resultComponent
     ContentItem {}

@@ -40,10 +40,9 @@ MainView {
       onClickedGetImage:{
         datePickerPage.pageStack.addPageToNextColumn(datePickerPage, picturePage)
         REST.get_picture(Qt.formatDate(datePickerPage.selectedDate, "yyyy-MM-dd"))
-        picturePage.headerText = Qt.formatDate(datePickerPage.selectedDate, i18n.tr("dd. MMMM yyyy"))
+        picturePage.headerText = Qt.formatDate(datePickerPage.selectedDate, i18n.tr("MM/dd/yyyy"))
       }
       onClickedAboutPage:{
-        console.log("AboutPage pressed")
         datePickerPage.pageStack.addPageToCurrentColumn(datePickerPage,aboutPage)
       }
     }
@@ -51,12 +50,11 @@ MainView {
     PicturePage{
       id: picturePage
       onSaveAs:{
-        console.log("Url still valid? "+urlToImage)
         saveImagePage.pathToSave = urlToImage
         picturePage.pageStack.addPageToCurrentColumn(picturePage, saveImagePage)
-        console.log("After adding page. Url still valid? "+urlToImage)
       }
       onShare:{
+        shareImagePage.pathToSave = urlToImage
         picturePage.pageStack.addPageToCurrentColumn(picturePage, shareImagePage)
       }
     }

@@ -10,7 +10,7 @@ Page {
 
   header: PageHeader {
     id: saveImageHeader
-    title: i18n.tr("Save image locally")
+    title: i18n.tr("Save picture")
   }
 
   ContentPeerPicker{
