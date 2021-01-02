@@ -30,7 +30,7 @@ Page {
         if(nasaImage.status == Image.Ready){
           //save image to local directory
           downloadingProgressBar.visible = true
-          singleImageHighResDownload.download(pictureOfTheDayInfos.urlInfo)
+          singleImageLowResDownload.download(pictureOfTheDayInfos.urlInfo)
         }
       }
     },
