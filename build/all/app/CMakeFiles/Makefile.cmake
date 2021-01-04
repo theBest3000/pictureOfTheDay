@@ -147,7 +147,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/potd.desktop.dir/DependInfo.cmake"
   "po/CMakeFiles/pofiles_2.dir/DependInfo.cmake"
   "po/CMakeFiles/pofiles_1.dir/DependInfo.cmake"
-  "po/CMakeFiles/pofiles.dir/DependInfo.cmake"
   "po/CMakeFiles/pofiles_3.dir/DependInfo.cmake"
+  "po/CMakeFiles/pofiles.dir/DependInfo.cmake"
+  "po/CMakeFiles/pofiles_4.dir/DependInfo.cmake"
   "po/CMakeFiles/potd.potd.pot.dir/DependInfo.cmake"
   )

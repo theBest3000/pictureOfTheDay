@@ -68,16 +68,15 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install/local
-install/local/fast: install/local
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : install/local/fast
+.PHONY : list_install_components/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -90,15 +89,16 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : list_install_components/fast
+.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -185,6 +185,21 @@ pofiles_1/fast:
 .PHONY : pofiles_1/fast
 
 # Convenience name for target.
+po/CMakeFiles/pofiles_3.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_3.dir/rule
+.PHONY : po/CMakeFiles/pofiles_3.dir/rule
+
+# Convenience name for target.
+pofiles_3: po/CMakeFiles/pofiles_3.dir/rule
+
+.PHONY : pofiles_3
+
+# fast build rule for target.
+pofiles_3/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles_3.dir/build.make po/CMakeFiles/pofiles_3.dir/build
+.PHONY : pofiles_3/fast
+
+# Convenience name for target.
 po/CMakeFiles/pofiles.dir/rule:
 	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles.dir/rule
 .PHONY : po/CMakeFiles/pofiles.dir/rule
@@ -200,19 +215,19 @@ pofiles/fast:
 .PHONY : pofiles/fast
 
 # Convenience name for target.
-po/CMakeFiles/pofiles_3.dir/rule:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_3.dir/rule
-.PHONY : po/CMakeFiles/pofiles_3.dir/rule
+po/CMakeFiles/pofiles_4.dir/rule:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/pofiles_4.dir/rule
+.PHONY : po/CMakeFiles/pofiles_4.dir/rule
 
 # Convenience name for target.
-pofiles_3: po/CMakeFiles/pofiles_3.dir/rule
+pofiles_4: po/CMakeFiles/pofiles_4.dir/rule
 
-.PHONY : pofiles_3
+.PHONY : pofiles_4
 
 # fast build rule for target.
-pofiles_3/fast:
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles_3.dir/build.make po/CMakeFiles/pofiles_3.dir/build
-.PHONY : pofiles_3/fast
+pofiles_4/fast:
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app && $(MAKE) -f po/CMakeFiles/pofiles_4.dir/build.make po/CMakeFiles/pofiles_4.dir/build
+.PHONY : pofiles_4/fast
 
 # Convenience name for target.
 po/CMakeFiles/potd.potd.pot.dir/rule:
@@ -237,12 +252,13 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... pofiles_2"
+	@echo "... list_install_components"
+	@echo "... install/strip"
 	@echo "... pofiles_1"
 	@echo "... install/local"
-	@echo "... pofiles"
 	@echo "... pofiles_3"
-	@echo "... install/strip"
-	@echo "... list_install_components"
+	@echo "... pofiles"
+	@echo "... pofiles_4"
 	@echo "... potd.potd.pot"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
