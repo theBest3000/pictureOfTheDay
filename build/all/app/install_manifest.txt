@@ -17,4 +17,5 @@
 //potd.desktop
 /share/locale/nl/LC_MESSAGES/potd.potd.mo
 /share/locale/de/LC_MESSAGES/potd.potd.mo
+/share/locale/it/LC_MESSAGES/potd.potd.mo
 /share/locale/fr/LC_MESSAGES/potd.potd.mo

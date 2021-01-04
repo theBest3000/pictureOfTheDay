@@ -53,15 +53,15 @@ CMAKE_BINARY_DIR = /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheD
 # Include the progress variables for this target.
 include po/CMakeFiles/pofiles_3.dir/progress.make
 
-po/CMakeFiles/pofiles_3: po/fr.gmo
+po/CMakeFiles/pofiles_3: po/it.gmo
 
 
-po/fr.gmo: ../../../po/fr.po
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating fr.gmo"
-	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/po && /usr/bin/msgfmt -o /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/po/fr.gmo /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/po/fr.po
+po/it.gmo: ../../../po/it.po
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating it.gmo"
+	cd /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/po && /usr/bin/msgfmt -o /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/build/all/app/po/it.gmo /home/wolfgang/Documents/UBPort/PictureOfTheDay/pictureOfTheDay/po/it.po
 
 pofiles_3: po/CMakeFiles/pofiles_3
-pofiles_3: po/fr.gmo
+pofiles_3: po/it.gmo
 pofiles_3: po/CMakeFiles/pofiles_3.dir/build.make
 
 .PHONY : pofiles_3
