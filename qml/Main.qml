@@ -38,9 +38,16 @@ MainView {
     DatePickerPage{
       id: datePickerPage
       onClickedGetImage:{
-        datePickerPage.pageStack.addPageToNextColumn(datePickerPage, picturePage)
         REST.get_picture(Qt.formatDate(datePickerPage.selectedDate, "yyyy-MM-dd"))
-        picturePage.headerText = Qt.formatDate(datePickerPage.selectedDate, i18n.tr("MM/dd/yyyy"))
+        console.log("Mediatype: "+pictureOfTheDayInfos.mediaTypeInfo)
+        if(pictureOfTheDayInfos.mediaTypeInfo === "image"){
+          datePickerPage.pageStack.addPageToNextColumn(datePickerPage, picturePage)
+          picturePage.headerText = Qt.formatDate(datePickerPage.selectedDate, i18n.tr("MM/dd/yyyy"))
+        }
+        else{
+          datePickerPage.pageStack.addPageToNextColumn(datePickerPage, videoPage)
+          videoPage.headerText = Qt.formatDate(datePickerPage.selectedDate, i18n.tr("MM/dd/yyyy"))
+        }
       }
       onClickedAboutPage:{
         datePickerPage.pageStack.addPageToCurrentColumn(datePickerPage,aboutPage)
@@ -59,6 +66,14 @@ MainView {
       }
     }
 
+    VideoPage{
+      id: videoPage
+      onShare:{
+        shareVideoPage.pathToShare = urlToVideo
+        picturePage.pageStack.addPageToCurrentcolumn(videoPage, shareVideoPage)
+      }
+    }
+
     AboutPage{
       id: aboutPage
     }
@@ -69,6 +84,10 @@ MainView {
 
     ShareImagePage{
       id: shareImagePage
+    }
+
+    ShareVideoPage{
+      id: shareVideoPage
     }
 
   }

@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-02 13:47+0000\n"
-"PO-Revision-Date: 2021-01-03 19:44+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2021-01-10 16:11+0000\n"
+"PO-Revision-Date: 2021-01-10 17:20+0100\n"
+"Last-Translator: Wolfgang Eder <eder9@gmx.at>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.0.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../qml/AboutPage.qml:8
@@ -23,8 +23,14 @@ msgid "About"
 msgstr "Riguardo"
 
 #: ../qml/AboutPage.qml:62
+#, fuzzy
+#| msgid ""
+#| "Icon and Splashscreen from <a href=\"https://pixabay.com/it/users/"
+#| "openclipart-vectors-30363/?utm_source=link-attribution&amp;"
+#| "utm_medium=referral&amp;utm_campaign=image&amp;"
+#| "utm_content=148300\">Pixabay</a>."
 msgid ""
-"Icon and Splashscreen from <a href=\"https://pixabay.com/it/users/"
+"Icon and Splashscreen from <a href=\"https://pixabay.com/de/users/"
 "openclipart-vectors-30363/?utm_source=link-attribution&amp;"
 "utm_medium=referral&amp;utm_campaign=image&amp;"
 "utm_content=148300\">Pixabay</a>."
@@ -48,7 +54,7 @@ msgid ""
 "turanmahmudov/Wallpapers\">Wallpapers</a> from Turan Mahmudov."
 msgstr ""
 "barra di avanzamento presa dall'app <a href=\"https://github.com/"
-"turanmahmudov/Wallpapers\">Wallpapers</a>  di Turan Mahmudov."
+"turanmahmudov/Wallpapers\">Wallpapers</a> di Turan Mahmudov."
 
 #: ../qml/AdditionalInfoPage.qml:9
 msgid "Additional infos"
@@ -70,31 +76,27 @@ msgstr "Descrizione:"
 msgid "Get picture of that day!"
 msgstr "Ottieni la foto del giorno!"
 
-#: ../qml/Main.qml:43
+#: ../qml/Main.qml:45 ../qml/Main.qml:49
 msgid "MM/dd/yyyy"
 msgstr "dd/MM/yyyy"
 
-#: ../qml/Main.qml:80
+#: ../qml/Main.qml:99
 msgid "Error"
 msgstr "Errore"
 
-#: ../qml/Main.qml:84
+#: ../qml/Main.qml:103
 msgid "Close"
 msgstr "Spegni"
 
-#: ../qml/Rest.js:46
-msgid "Video not supported yet."
-msgstr "I video non sono ancora supportati."
-
-#: ../qml/Rest.js:53
+#: ../qml/Rest.js:47
 msgid "Picture does not exist. Did you set the proper date?"
 msgstr "L'immagine non esiste. Hai impostato la data corretta?"
 
-#: ../qml/Rest.js:58
+#: ../qml/Rest.js:52
 msgid "An error occured. Errorcode: "
 msgstr "Si è verificato un errore. Codice di errore:"
 
-#: ../qml/Rest.js:83
+#: ../qml/Rest.js:77
 msgid "Public Domain"
 msgstr "Pubblico dominio"
 
@@ -102,13 +104,20 @@ msgstr "Pubblico dominio"
 msgid "Save picture"
 msgstr "Salva l'immagine"
 
-#: ../qml/ShareImagePage.qml:14
+#: ../qml/ShareImagePage.qml:13
 msgid "Share picture"
 msgstr "Condividi l'immagine"
+
+#: ../qml/ShareVideoPage.qml:13
+msgid "Share video"
+msgstr "Condividi video"
 
 #: potd.desktop.in.h:1
 msgid "Astronomy Picture Of The Day"
 msgstr "Immagine Astronomica del Giorno"
+
+#~ msgid "Video not supported yet."
+#~ msgstr "I video non sono ancora supportati."
 
 #~ msgid "Picture Of The Day"
 #~ msgstr "Bild des Tages"

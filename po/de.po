@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-02 13:47+0000\n"
-"PO-Revision-Date: 2021-01-02 15:15+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2021-01-10 16:11+0000\n"
+"PO-Revision-Date: 2021-01-10 17:20+0100\n"
+"Last-Translator: Wolfgang Eder <eder9@gmx.at>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -26,29 +26,28 @@ msgstr "Über"
 msgid ""
 "Icon and Splashscreen from <a href=\"https://pixabay.com/de/users/"
 "openclipart-vectors-30363/?utm_source=link-attribution&amp;"
-"utm_medium=referral&amp;utm_campaign=image&amp;"
-"utm_content=148300\">Pixabay</a>."
+"utm_medium=referral&amp;utm_campaign=image&amp;utm_content=148300\">Pixabay</"
+"a>."
 msgstr ""
-"Icon und Splashscreen von <a href=\"https://pixabay.com/de/users/"
-"openclipart-vectors-30363/?utm_source=link-attribution&amp;"
-"utm_medium=referral&amp;utm_campaign=image&amp;"
-"utm_content=148300\">Pixabay</a>."
+"Icon und Splashscreen von <a href=\"https://pixabay.com/de/users/openclipart-"
+"vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;"
+"utm_campaign=image&amp;utm_content=148300\">Pixabay</a>."
 
 #: ../qml/AboutPage.qml:72
 msgid ""
 "Code based on an online <a href=\"https://blog.felgo.com/guest-post/nasa-"
 "astronomy-picture-app\">tutorial</a>."
 msgstr ""
-"Code basiert auf ein online <a href=\"https://blog.felgo.com/guest-post/"
-"nasa-astronomy-picture-app\">Tutorial</a>."
+"Code basiert auf ein online <a href=\"https://blog.felgo.com/guest-post/nasa-"
+"astronomy-picture-app\">Tutorial</a>."
 
 #: ../qml/AboutPage.qml:81
 msgid ""
 "Bouncing Progress Bar from the app <a href=\"https://github.com/"
 "turanmahmudov/Wallpapers\">Wallpapers</a> from Turan Mahmudov."
 msgstr ""
-"Bouncing Progress Bar übernommen von der App <a href=\"https://github."
-"com/turanmahmudov/Wallpapers\">Wallpapers</a>  von Turan Mahmudov."
+"Bouncing Progress Bar übernommen von der App <a href=\"https://github.com/"
+"turanmahmudov/Wallpapers\">Wallpapers</a>  von Turan Mahmudov."
 
 #: ../qml/AdditionalInfoPage.qml:9
 msgid "Additional infos"
@@ -70,31 +69,27 @@ msgstr "Bildbeschreibung:"
 msgid "Get picture of that day!"
 msgstr "Zeige Bild des Tages!"
 
-#: ../qml/Main.qml:43
+#: ../qml/Main.qml:45 ../qml/Main.qml:49
 msgid "MM/dd/yyyy"
 msgstr "dd. MMMM yyyy"
 
-#: ../qml/Main.qml:80
+#: ../qml/Main.qml:99
 msgid "Error"
 msgstr "Fehler"
 
-#: ../qml/Main.qml:84
+#: ../qml/Main.qml:103
 msgid "Close"
 msgstr "Schließen"
 
-#: ../qml/Rest.js:46
-msgid "Video not supported yet."
-msgstr "Videos werden noch nicht unterstützt."
-
-#: ../qml/Rest.js:53
+#: ../qml/Rest.js:47
 msgid "Picture does not exist. Did you set the proper date?"
 msgstr "Bild existiert nicht. Richtiges Datum?"
 
-#: ../qml/Rest.js:58
+#: ../qml/Rest.js:52
 msgid "An error occured. Errorcode: "
 msgstr "Ein Fehler ist aufgetreten. Fehlercode: "
 
-#: ../qml/Rest.js:83
+#: ../qml/Rest.js:77
 msgid "Public Domain"
 msgstr "Public Domain"
 
@@ -102,13 +97,20 @@ msgstr "Public Domain"
 msgid "Save picture"
 msgstr "Bild speichern"
 
-#: ../qml/ShareImagePage.qml:14
+#: ../qml/ShareImagePage.qml:13
 msgid "Share picture"
 msgstr "Bild teilen"
+
+#: ../qml/ShareVideoPage.qml:13
+msgid "Share video"
+msgstr "Video teilen"
 
 #: potd.desktop.in.h:1
 msgid "Astronomy Picture Of The Day"
 msgstr "Astronomy Picture Of The Day"
+
+#~ msgid "Video not supported yet."
+#~ msgstr "Videos werden noch nicht unterstützt."
 
 #~ msgid "Picture Of The Day"
 #~ msgstr "Bild des Tages"
