@@ -2,6 +2,12 @@
 
 Shows NASAs picture of the day.
 
+## Installation
+
+Install the app from the opten store
+
+<a href="https://open-store.io/app/potd.potd"><img src="https://open-store.io/badges/en_US.png" alt="OpenStore" /></a>
+
 ## License
 
 Copyright (C) 2020  Wolfgang Eder
