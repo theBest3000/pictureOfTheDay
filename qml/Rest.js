@@ -33,20 +33,14 @@ function get_request(url, params, callback)
 
       }
     }(http)
-    http.open("GET", url + "?" + params, true)
+    console.log("Trying to reach url: GET "+url + "?" + params)
+    http.open("GET", url + "?" + params, false)
     http.send()
 }
 
 function requestError(errorCode)
 {
     imageToShow.source = ""
-
-    if (errorCode === 10)
-    {
-      errorText = i18n.tr("Video not supported yet.")
-      PopupUtils.open(errorDialog)
-      return
-    }
 
     if (errorCode === 400)
     {
@@ -73,7 +67,7 @@ function requestSuccess(res_json)
       }
       else if (res_json.media_type === "video")
       {
-        requestError(10)
+        //requestError(10)
         //nasaVideo.loadVideo(youtube_parser(res_json.url),true)
         //nasaVideo.visible = true
       }

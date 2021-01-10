@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-02 13:47+0000\n"
-"PO-Revision-Date: 2021-01-02 15:06+0100\n"
-"Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
+"POT-Creation-Date: 2021-01-10 16:11+0000\n"
+"PO-Revision-Date: 2021-01-10 17:20+0100\n"
+"Last-Translator: Wolfgang Eder <eder9@gmx.at>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -69,31 +69,27 @@ msgstr "Description :"
 msgid "Get picture of that day!"
 msgstr "Obtenir l'image du jour !"
 
-#: ../qml/Main.qml:43
+#: ../qml/Main.qml:45 ../qml/Main.qml:49
 msgid "MM/dd/yyyy"
 msgstr "dd. MMMM yyyy"
 
-#: ../qml/Main.qml:80
+#: ../qml/Main.qml:99
 msgid "Error"
 msgstr "Erreur"
 
-#: ../qml/Main.qml:84
+#: ../qml/Main.qml:103
 msgid "Close"
 msgstr "Fermer"
 
-#: ../qml/Rest.js:46
-msgid "Video not supported yet."
-msgstr "Vidéo non encore prise en charge."
-
-#: ../qml/Rest.js:53
+#: ../qml/Rest.js:47
 msgid "Picture does not exist. Did you set the proper date?"
 msgstr "L'image n'existe pas. Avez-vous défini la bonne date ?"
 
-#: ../qml/Rest.js:58
+#: ../qml/Rest.js:52
 msgid "An error occured. Errorcode: "
 msgstr "Une erreur s'est produite. Code de l'erreur : "
 
-#: ../qml/Rest.js:83
+#: ../qml/Rest.js:77
 msgid "Public Domain"
 msgstr "Domaine public"
 
@@ -101,15 +97,22 @@ msgstr "Domaine public"
 msgid "Save picture"
 msgstr "Enregistrer l'image"
 
-#: ../qml/ShareImagePage.qml:14
+#: ../qml/ShareImagePage.qml:13
 #, fuzzy
 #| msgid "Share image"
 msgid "Share picture"
 msgstr "Partager l'image"
 
+#: ../qml/ShareVideoPage.qml:13
+msgid "Share video"
+msgstr "Partager vidéo"
+
 #: potd.desktop.in.h:1
 msgid "Astronomy Picture Of The Day"
 msgstr "Image astronomique du jour"
+
+#~ msgid "Video not supported yet."
+#~ msgstr "Vidéo non encore prise en charge."
 
 #~ msgid "dd. MMMM yyyy"
 #~ msgstr "dd. MMMM yyyy"

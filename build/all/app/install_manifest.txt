@@ -12,7 +12,9 @@
 //qml/Main.qml
 //qml/BouncingProgressBar.qml
 //qml/SaveImagePage.qml
+//qml/VideoPage.qml
 //qml/PicturePage.qml
+//qml/ShareVideoPage.qml
 //qml/Rest.js
 //potd.desktop
 /share/locale/nl/LC_MESSAGES/potd.potd.mo
