@@ -33,6 +33,12 @@ MainView {
     anchors.fill: parent
     primaryPage: datePickerPage
 
+    Component.onCompleted:{
+      //When completed with loading, show current date on datePickerPage
+      console.log("All loaded. APP is up and running.")
+      datePickerPage.selectedDate = new Date();
+    }
+
     //Instances of the pages
 
     DatePickerPage{
