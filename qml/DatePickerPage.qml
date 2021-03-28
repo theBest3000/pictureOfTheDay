@@ -57,4 +57,5 @@ import Ubuntu.Components.Pickers 1.3
         root.clickedGetImage()
       }
     }
+
   }

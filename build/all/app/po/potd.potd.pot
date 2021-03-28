@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: potd.potd\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-10 16:21+0000\n"
+"POT-Creation-Date: 2021-03-28 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,15 +61,15 @@ msgstr ""
 msgid "Get picture of that day!"
 msgstr ""
 
-#: ../qml/Main.qml:45 ../qml/Main.qml:49
+#: ../qml/Main.qml:51 ../qml/Main.qml:55
 msgid "MM/dd/yyyy"
 msgstr ""
 
-#: ../qml/Main.qml:99
+#: ../qml/Main.qml:105
 msgid "Error"
 msgstr ""
 
-#: ../qml/Main.qml:103
+#: ../qml/Main.qml:109
 msgid "Close"
 msgstr ""
 
